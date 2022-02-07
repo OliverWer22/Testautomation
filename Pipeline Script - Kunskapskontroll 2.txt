@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+    tools { Selenium "Selenium" }
+    stages {
+        stage('Check tool') {
+            steps {
+                //Check that selenium is up and running 
+                
+            }
+            
+        }
+        stage('Start tool') {
+            steps {
+                //Run selenium from command line
+                
+            }
+            
+        }
+        stage('Checkout code') {
+            steps {
+                git branch: 'main',url:'https://github.com/OliverWer22/Testautomation'
+                
+            }
+            
+        }
+        stage('Selenium Tests') {
+            steps {
+                //Run the tests from checkout code file
+                
+            }
+            
+        }
+        
+    }
+    
+}
