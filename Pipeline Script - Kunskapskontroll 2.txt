@@ -9,13 +9,6 @@ pipeline {
             }
             
         }
-        stage('Start tool') {
-            steps {
-                //Run selenium from command line
-                
-            }
-            
-        }
         stage('Checkout code') {
             steps {
                 git branch: 'main',url:'https://github.com/OliverWer22/Testautomation'
