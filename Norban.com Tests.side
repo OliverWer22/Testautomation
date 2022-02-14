@@ -1,0 +1,104 @@
+{
+  "id": "2d0fa899-e6c3-4e17-ae1e-4339ae051736",
+  "version": "2.0",
+  "name": "Norban.com Tests ",
+  "url": "https://norban.se/",
+  "tests": [{
+    "id": "177f00ff-78e0-4c65-a7be-b8a2b172e880",
+    "name": "Verify Home Button",
+    "commands": [{
+      "id": "d1612c93-1355-4fac-b209-dd865347b4e2",
+      "comment": "",
+      "command": "open",
+      "target": "https://norban.se/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b9ba8f1-98a4-4f4c-84d5-f18c6529b4c7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a60fe0b0-fa3e-4203-bc44-506ff30f778c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-logo",
+      "targets": [
+        ["css=.Header-logo", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f58686fa-46a4-467b-8210-945570c86a12",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.FrontPage-topAboveFoldTagline",
+      "targets": [
+        ["css=.FrontPage-topAboveFoldTagline", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/section/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mänskliga mäklare. Digitala möjligheter.')]", "xpath:innerText"]
+      ],
+      "value": "Mänskliga mäklare. Digitala möjligheter."
+    }, {
+      "id": "2f31d6af-262b-46ec-b35b-f225a2372385",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Så funkar Norban",
+      "targets": [
+        ["linkText=Så funkar Norban", "linkText"],
+        ["css=li:nth-child(1) > .Header-navigationLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Så funkar Norban')]", "xpath:link"],
+        ["xpath=//div[@id='react-root']/header/div/nav/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sa-funkar-norban/')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Så funkar Norban')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb7b1df6-ed20-41ce-8294-1be20f49ebd3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.SellPage-introTitle",
+      "targets": [
+        ["css=.SellPage-introTitle", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/section/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Varför stressa igenom ditt livs största affär?')]", "xpath:innerText"]
+      ],
+      "value": "Varför stressa igenom ditt livs största affär?"
+    }, {
+      "id": "e24dfb7e-a665-4ed5-a0ce-e970c4327677",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-logoPath",
+      "targets": [
+        ["css=.Header-logoPath", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce8bbf68-a625-405e-828a-0d3a06d35d99",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.FrontPage-topAboveFoldTagline",
+      "targets": [
+        ["css=.FrontPage-topAboveFoldTagline", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/section/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mänskliga mäklare. Digitala möjligheter.')]", "xpath:innerText"]
+      ],
+      "value": "Mänskliga mäklare. Digitala möjligheter."
+    }]
+  }],
+  "suites": [{
+    "id": "8a608081-4cc4-4bd8-8e43-1cfbf9826569",
+    "name": "Verify Links",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["177f00ff-78e0-4c65-a7be-b8a2b172e880"]
+  }],
+  "urls": ["https://norban.se/"],
+  "plugins": []
+}
