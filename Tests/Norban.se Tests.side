@@ -591,6 +591,85 @@
         ["xpath=//div[3]/div[2]", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "8973ae00-82a5-405d-baed-f96377081f92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-logoPath",
+      "targets": [
+        ["css=.Header-logoPath", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c9e4818-3631-4370-8f2b-73acf75a54da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-hamburger",
+      "targets": [
+        ["css=.Header-hamburger", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/div[2]", "xpath:idRelative"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fd59ff1-af88-40be-acc0-97eb0c215000",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.Header-accountIconContainer .AccountIcon",
+      "targets": [
+        ["css=.Header-accountIconContainer .AccountIcon", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/div/a/div", "xpath:idRelative"],
+        ["xpath=//div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f353c0c6-1a73-472e-9c2a-6935304f6256",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.Header-mobileMenuLink:nth-child(2) > .Header-mobileMenuLinkTitle",
+      "targets": [
+        ["css=.Header-mobileMenuLink:nth-child(2) > .Header-mobileMenuLinkTitle", "css:finder"],
+        ["xpath=//div[@id='react-aria-modal-dialog']/div/div/a[2]/h2", "xpath:idRelative"],
+        ["xpath=//a[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Nyproduktion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf58f8d7-d40d-4bad-b7b8-233c09f9f77c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-mobileMenuLink:nth-child(3) > .Header-mobileMenuLinkTitle",
+      "targets": [
+        ["css=.Header-mobileMenuLink:nth-child(3) > .Header-mobileMenuLinkTitle", "css:finder"],
+        ["xpath=//div[@id='react-aria-modal-dialog']/div/div/a[3]/h2", "xpath:idRelative"],
+        ["xpath=//a[3]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Våra bostäder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "240b14ec-d012-477d-88f9-88a45dbb1101",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Prototype-searchInputCtrl",
+      "targets": [
+        ["css=.Prototype-searchInputCtrl", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div/div[2]/div/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43a33193-36ed-4698-98ed-1fb34ee866a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Prototype-searchInputCtrl",
+      "targets": [
+        ["css=.Prototype-searchInputCtrl", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div/div[2]/div/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
     }]
   }, {
     "id": "5b1affe7-ee4d-4581-8d31-9ae451e81228",
@@ -825,6 +904,264 @@
       ],
       "value": "Här får du svar på\\nde vanligaste\\nfrågorna."
     }]
+  }, {
+    "id": "2390895a-dc0d-483b-bdd8-4d848385f9ba",
+    "name": "Log in No username",
+    "commands": [{
+      "id": "f8bb1f3d-47e6-4894-aaec-afc3045fbeef",
+      "comment": "",
+      "command": "open",
+      "target": "https://norban.se/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49aa97b4-fff9-4605-bdbd-59ca7be0cbe5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "578fe0af-4c9c-48a4-8734-0f2f28d6d20e",
+      "comment": "",
+      "command": "click",
+      "target": "css=li .AccountIcon",
+      "targets": [
+        ["css=li .AccountIcon", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/ul/li[6]/a/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98ca7d16-1844-4f97-8e73-5d08a3bbce89",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AuthPage-segmentedControlBtn:nth-child(3)",
+      "targets": [
+        ["css=.AuthPage-segmentedControlBtn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logga in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c371a587-4409-40ec-a7f3-db3373e1d374",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AuthForms-formInput:nth-child(2)",
+      "targets": [
+        ["css=.AuthForms-formInput:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ab32744-344c-4cf3-b0a0-e697e9ac18c2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.AuthForms-formInput:nth-child(2)",
+      "targets": [
+        ["css=.AuthForms-formInput:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='TestTest']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "TestTest"
+    }, {
+      "id": "a46ceb96-7ede-4ca3-9556-409fffce2636",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AuthForms-submitBtn",
+      "targets": [
+        ["css=.AuthForms-submitBtn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6151d7ff-86b4-44fc-8a6b-abec4f616032",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.AuthForms-errorText",
+      "targets": [
+        ["css=.AuthForms-errorText", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/p", "xpath:idRelative"],
+        ["xpath=//form/p", "xpath:position"],
+        ["xpath=//p[contains(.,'E-post saknas')]", "xpath:innerText"]
+      ],
+      "value": "E-post saknas"
+    }]
+  }, {
+    "id": "4d5bbec4-20e1-4c0b-912d-5128a8dfeda1",
+    "name": "Log In No password",
+    "commands": [{
+      "id": "afc8ea87-7e95-4fc1-a611-591ad589b7a6",
+      "comment": "",
+      "command": "open",
+      "target": "https://norban.se/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f59b15cb-a81d-4a3c-9098-4a312b49719f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d6cf7dd-bd92-41a6-aa58-ff4addcbecc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=li .AccountIcon",
+      "targets": [
+        ["css=li .AccountIcon", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/ul/li[6]/a/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79bb1557-110e-4607-882d-0404daadce52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AuthPage-segmentedControlBtn:nth-child(3)",
+      "targets": [
+        ["css=.AuthPage-segmentedControlBtn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logga in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69c4a2c4-7801-4b6a-bb4f-4f9d6bdfb221",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AuthForms-formInput:nth-child(1)",
+      "targets": [
+        ["css=.AuthForms-formInput:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdb7c3a2-142f-41aa-88c0-5586927a0326",
+      "comment": "",
+      "command": "type",
+      "target": "css=.AuthForms-formInput:nth-child(1)",
+      "targets": [
+        ["css=.AuthForms-formInput:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='TestTest']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "oliver.werthen@hotmail.com"
+    }, {
+      "id": "5c598fb7-b18b-489f-8846-b719ece2d82d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AuthForms-submitBtn",
+      "targets": [
+        ["css=.AuthForms-submitBtn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36cc8c45-3ccc-4acc-a1dd-24ac5634e665",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.AuthForms-errorText",
+      "targets": [
+        ["css=.AuthForms-errorText", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/p", "xpath:idRelative"],
+        ["xpath=//form/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Lösenord saknas')]", "xpath:innerText"]
+      ],
+      "value": "Lösenord saknas"
+    }]
+  }, {
+    "id": "926f977b-6bbf-43c6-bd66-a628bbeb30e2",
+    "name": "Log in no User and pass",
+    "commands": [{
+      "id": "8788241e-c0d8-47a3-8407-764360d45be9",
+      "comment": "",
+      "command": "open",
+      "target": "https://norban.se/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8568f217-32bf-4bd4-9134-461b14a8c67e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcc837d3-f028-439f-8c4d-dcd4a072d73c",
+      "comment": "",
+      "command": "click",
+      "target": "css=li .AccountIcon",
+      "targets": [
+        ["css=li .AccountIcon", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/ul/li[6]/a/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85e5c9a9-4d5f-4044-94b4-5bb31ecbe5a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AuthPage-segmentedControlBtn:nth-child(3)",
+      "targets": [
+        ["css=.AuthPage-segmentedControlBtn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logga in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8a9c1ea-731a-4285-b0c5-e6e1467583f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AuthForms-submitBtn",
+      "targets": [
+        ["css=.AuthForms-submitBtn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49a35e75-9f11-4803-8a52-9375ae6edd38",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='react-root']/div[2]/div/div[2]/form/p",
+      "targets": [
+        ["css=.AuthForms-errorText", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/p", "xpath:idRelative"],
+        ["xpath=//form/p", "xpath:position"],
+        ["xpath=//p[contains(.,'E-post saknas')]", "xpath:innerText"]
+      ],
+      "value": "E-post saknas"
+    }, {
+      "id": "f9e01623-e168-4a25-ac7d-b28345abdd5b",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='react-root']/div[2]/div/div[2]/form/p[2]",
+      "targets": [
+        ["css=.AuthForms-errorText", "css:finder"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/p", "xpath:idRelative"],
+        ["xpath=//form/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Lösenord saknas')]", "xpath:innerText"]
+      ],
+      "value": "Lösenord saknas"
+    }]
   }],
   "suites": [{
     "id": "8a608081-4cc4-4bd8-8e43-1cfbf9826569",
@@ -833,6 +1170,13 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["177f00ff-78e0-4c65-a7be-b8a2b172e880", "614b9372-c512-4377-8b1a-bfd27bce47d1", "c8c8fd9b-428f-441a-883b-94f4a637ade2"]
+  }, {
+    "id": "e6846a1e-082a-44f7-aa2a-91d50a323119",
+    "name": "Login",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ced04972-868d-41d2-929b-588ec383c744", "4d5bbec4-20e1-4c0b-912d-5128a8dfeda1", "2390895a-dc0d-483b-bdd8-4d848385f9ba", "926f977b-6bbf-43c6-bd66-a628bbeb30e2"]
   }],
   "urls": ["https://norban.se/"],
   "plugins": []

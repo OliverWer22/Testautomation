@@ -128,12 +128,12 @@ public class Tests
         IWebElement firstResult = wait.Until(e => e.FindElement(By.CssSelector(".AuthPage-segmentedControlBtn:nth-child(3)")));
         driver.FindElement(By.CssSelector(".AuthPage-segmentedControlBtn:nth-child(3)")).Click();
         driver.FindElement(By.CssSelector(".AuthForms-submitBtn")).Click();
-        IWebElement firstResul3 = wait.Until(e => e.FindElement(By.CssSelector(".AuthForms-errorText")));
+        IWebElement firstResul2 = wait.Until(e => e.FindElement(By.CssSelector(".AuthForms-errorText")));
         Assert.That(driver.FindElement(By.XPath("//div[@id=\'react-root\']/div[2]/div/div[2]/form/p")).Text, Is.EqualTo("E-post saknas"));
         Assert.That(driver.FindElement(By.XPath("//div[@id=\'react-root\']/div[2]/div/div[2]/form/p[2]")).Text, Is.EqualTo("Lösenord saknas"));
     }
      [Test]
-    public void getadressoffirstResidence()
+    public void getAdressAndSearch()
     {
         driver.FindElement(By.LinkText("Våra bostäder")).Click();
         WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
@@ -143,17 +143,14 @@ public class Tests
         driver.FindElement(By.XPath("//div[@id=\'react-root\']/div/div[2]/div/div/div[3]/div[2]")).Click();
         IWebElement firstResult1 = wait.Until(e => e.FindElement(By.CssSelector(".Prototype-searchInput")));
         driver.FindElement(By.CssSelector(".Prototype-searchInputCtrl")).SendKeys(Adress);
-        driver.FindElement(By.CssSelector(".Prototype-searchInputCtrl")).SendKeys(Keys.Enter);
-        //Thread.Sleep(1000);
-        /*var wait1 = new WebDriverWait(driver, new TimeSpan(0, 0, 30));
-        IWebElement element = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.TextToBePresentInElementValue(By.CssSelector(".Prototype-resultCount")));
-        */
+        driver.FindElement(By.CssSelector(".Prototype-searchInputCtrl")).Click();
+        IWebElement firstResult2 = wait.Until(e => e.FindElement(By.XPath("/html/body/div[1]/main/div/div/div[2]/div/div[1]/div[3]/div[2]/div[2]/div[2]")));
+        driver.FindElement(By.XPath("/html/body/div[1]/main/div/div/div[2]/div/div[1]/div[3]/div[2]/div[2]/div[2]")).Click();
         string bostad = "Vi har hittat 1 bostad.";
-        //IWebElement element = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.TextToBePresentInElement(By.CssSelector(".Prototype-resultCount"), bostad));
-        
+        IWebElement bostadtext = driver.FindElement(By.CssSelector(".Prototype-resultCount"));
+        wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.TextToBePresentInElement(bostadtext, bostad));
         Assert.That(driver.FindElement(By.CssSelector(".Prototype-resultCount")).Text, Is.EqualTo("Vi har hittat 1 bostad."));
-
-
+        Thread.Sleep(1000);
     }
 
     [Test]
