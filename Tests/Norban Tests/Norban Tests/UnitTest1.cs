@@ -12,7 +12,7 @@ using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
 
 [TestFixture]
-public class VerifyLinksTest
+public class Tests
 {
 
     private IWebDriver driver;
