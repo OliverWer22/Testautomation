@@ -98,6 +98,49 @@ public class VerifyLinksTest
         var elements = driver.FindElements(By.CssSelector(".AccountEmptyState-img"));
         Assert.True(elements.Count > 0);
     }
+    [Test]
+    public void getadressoffirstResidence()
+    {
+        driver.FindElement(By.LinkText("Våra bostäder")).Click();
+        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+        IWebElement firstResult = wait.Until(e => e.FindElement(By.XPath("//div[@id=\'react-root\']/div/div[3]/div/div/div[2]/a/div/div[3]/div[2]/div")));
+        driver.FindElement(By.XPath("//div[@id=\'react-root\']/div/div[3]/div/div/div[2]/a/div/div[3]")).Click();
+        string Adress = driver.FindElement(By.XPath("/html/body/div[1]/main/div/div/div[3]/div[1]/div/div[2]/a[1]/div/div[3]/div[2]/div[1]")).Text;
+        driver.FindElement(By.XPath("//div[@id=\'react-root\']/div/div[2]/div/div/div[3]/div[2]")).SendKeys(Adress);
+        
+
+    }
+    //lägg till waits
+    [Test]
+    public void phonemeny()
+    {
+        driver.Manage().Window.Size = new System.Drawing.Size(782, 823);
+        driver.FindElement(By.CssSelector(".FrontPage-topAboveFoldTagline")).Click();
+        driver.FindElement(By.CssSelector(".Header-hamburger")).Click();
+        driver.FindElement(By.CssSelector(".Header-mobileMenuLink:nth-child(1) > .Header-mobileMenuLinkTitle")).Click();
+        Assert.That(driver.FindElement(By.XPath("//div[@id=\'react-root\']/div/section/div/div/h1")).Text, Is.EqualTo("Varför stressa igenom ditt livs största affär?"));
+        driver.FindElement(By.CssSelector(".Header-hamburger")).Click();
+        driver.FindElement(By.CssSelector(".Header-mobileMenuLink:nth-child(2) > .Header-mobileMenuLinkTitle")).Click();
+        Assert.That(driver.FindElement(By.XPath("//div[@id=\'react-root\']/div/div/div/h1")).Text, Is.EqualTo("Nyproduktion"));
+        driver.FindElement(By.CssSelector(".Header-hamburger")).Click();
+        driver.FindElement(By.CssSelector(".Header-mobileMenuLink:nth-child(3) > .Header-mobileMenuLinkTitle")).Click();
+        var elements = driver.FindElements(By.XPath("(//button[@type=\'button\'])[2]"));
+        Assert.True(elements.Count > 0);
+        driver.FindElement(By.CssSelector(".Header-hamburger")).Click();
+        driver.FindElement(By.CssSelector(".Header-mobileMenuLink:nth-child(4) > .Header-mobileMenuLinkTitle")).Click();
+        Assert.That(driver.FindElement(By.XPath("//div[@id=\'react-root\']/div/section/div/div/h1")).Text, Is.EqualTo("Vi vill skapa världens bästa mäklartjänst."));
+        driver.FindElement(By.CssSelector(".Header-hamburger")).Click();
+        driver.FindElement(By.CssSelector(".Header-mobileMenuLink:nth-child(5) > .Header-mobileMenuLinkTitle")).Click();
+        var elements1 = driver.FindElements(By.CssSelector(".BlogOverviewPage-body"));
+        Assert.True(elements1.Count > 0);
+        driver.FindElement(By.CssSelector(".Header-hamburger")).Click();
+        driver.FindElement(By.CssSelector(".Header-mobileMenuLink:nth-child(6) > .Header-mobileMenuLinkTitle")).Click();
+        Assert.That(driver.FindElement(By.XPath("//div[@id=\'react-root\']/div/section/div/div/h1")).Text, Is.EqualTo("Här får du svar på\\\\nde vanligaste\\\\nfrågorna."));
+    }
+
 }
+
+
+        
 
 

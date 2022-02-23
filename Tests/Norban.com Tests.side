@@ -181,371 +181,6 @@
       "value": "Nyproduktion"
     }]
   }, {
-    "id": "f152faef-847e-4b5f-8207-4fe2b72608d2",
-    "name": "Search for specific residence",
-    "commands": [{
-      "id": "58eb38d3-f9a0-4b88-b19e-0003679c7524",
-      "comment": "",
-      "command": "open",
-      "target": "https://norban.se/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "2b7bcf4a-b5dd-4f0b-9a51-8a9697c22952",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1552x832",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "f3377b2e-aff9-4e08-8a1a-a8e3d49f4495",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Våra bostäder",
-      "targets": [
-        ["linkText=Våra bostäder", "linkText"],
-        ["css=li:nth-child(3) > .Header-navigationLink", "css:finder"],
-        ["xpath=//a[contains(text(),'Våra bostäder')]", "xpath:link"],
-        ["xpath=//div[@id='react-root']/header/div/nav/ul/li[3]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/vara-bostader/')]", "xpath:href"],
-        ["xpath=//li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Våra bostäder')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "73751518-167b-424d-bc8a-c581971bd681",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "linkText=Våra bostäder",
-      "targets": [
-        ["linkText=Våra bostäder", "linkText"],
-        ["css=li > .active", "css:finder"],
-        ["xpath=//a[contains(text(),'Våra bostäder')]", "xpath:link"],
-        ["xpath=//div[@id='react-root']/header/div/nav/ul/li[3]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/vara-bostader/')]", "xpath:href"],
-        ["xpath=//li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Våra bostäder')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "4cd584e6-9b6f-4458-b704-931cb304dcd5",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "linkText=Våra bostäder",
-      "targets": [
-        ["linkText=Våra bostäder", "linkText"],
-        ["css=li > .active", "css:finder"],
-        ["xpath=//a[contains(text(),'Våra bostäder')]", "xpath:link"],
-        ["xpath=//div[@id='react-root']/header/div/nav/ul/li[3]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/vara-bostader/')]", "xpath:href"],
-        ["xpath=//li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Våra bostäder')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "e770c535-49bd-43bf-9a0c-fc3efc73bb62",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Prototype-searchCity",
-      "targets": [
-        ["css=.Prototype-searchCity", "css:finder"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div/div/div/div/div/div", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div/div/div/div/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "f8bb14e4-8b95-4683-b791-89547c888c0e",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Prototype-searchCityContainer > .Prototype-searchAreaRow:nth-child(5)",
-      "targets": [
-        ["css=.Prototype-searchCityContainer > .Prototype-searchAreaRow:nth-child(5)", "css:finder"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div/div/div/div/div/div/div/div[2]/div[5]", "xpath:idRelative"],
-        ["xpath=//div[5]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "a28814c0-452e-449a-b050-a91d21fd63c7",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.FilterDropdown:nth-child(2) .FilterBar-filterBtn",
-      "targets": [
-        ["css=.FilterDropdown:nth-child(2) .FilterBar-filterBtn", "css:finder"],
-        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[2]/div/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div[2]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Marknadstyper')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "1a607687-161c-4c1e-8b98-86e37cc1ad0d",
-      "comment": "",
-      "command": "click",
-      "target": "css=.FilterDropdown:nth-child(2) .FilterBar-filterBtn",
-      "targets": [
-        ["css=.FilterDropdown:nth-child(2) .FilterBar-filterBtn", "css:finder"],
-        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[2]/div/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div[2]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Marknadstyper')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "2094a1c7-987f-4a7e-927d-5af4e454e17c",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "css=.open",
-      "targets": [
-        ["css=.open", "css:finder"],
-        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[2]/div/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div[2]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Marknadstyper')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d79f2ee4-f817-426a-9d4c-fedff56d79dc",
-      "comment": "",
-      "command": "click",
-      "target": "css=.RadioButton:nth-child(2) > .RadioButton-textLabel",
-      "targets": [
-        ["css=.RadioButton:nth-child(2) > .RadioButton-textLabel", "css:finder"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[2]/div[2]/div/div/div[2]/div[2]/span", "xpath:idRelative"],
-        ["xpath=//div[2]/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Pre-Market™')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "ada4d194-259e-49ed-9278-7b6496f41504",
-      "comment": "",
-      "command": "click",
-      "target": "css=.RadioButton:nth-child(3) > .RadioButton-textLabel",
-      "targets": [
-        ["css=.RadioButton:nth-child(3) > .RadioButton-textLabel", "css:finder"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[2]/div[2]/div/div/div[2]/div[3]/span", "xpath:idRelative"],
-        ["xpath=//div[3]/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Snart på Pre-Market™')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "b072b5ab-59ed-4bbc-9617-10068301bd0b",
-      "comment": "",
-      "command": "click",
-      "target": "css=.RadioButton:nth-child(4) > .RadioButton-textLabel",
-      "targets": [
-        ["css=.RadioButton:nth-child(4) > .RadioButton-textLabel", "css:finder"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[2]/div[2]/div/div/div[2]/div[4]/span", "xpath:idRelative"],
-        ["xpath=//div[4]/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Sålda')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "be47c5df-eded-4d87-8df1-08ebbe040cd0",
-      "comment": "",
-      "command": "click",
-      "target": "css=.FilterDropdown:nth-child(3) .FilterBar-filterBtn",
-      "targets": [
-        ["css=.FilterDropdown:nth-child(3) .FilterBar-filterBtn", "css:finder"],
-        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[3]/div/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div[3]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Bostadstyper')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "edf7c304-6ed7-42d3-bc73-bb7afbdf317c",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.FilterDropdown:nth-child(3) .FilterBar-filterBtn",
-      "targets": [
-        ["css=.FilterDropdown:nth-child(3) .FilterBar-filterBtn", "css:finder"],
-        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[3]/div/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div[3]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Bostadstyper')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "ef3ee71f-82e7-485d-8b05-20a10b424321",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "css=.open",
-      "targets": [
-        ["css=.open", "css:finder"],
-        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[3]/div/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div[3]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Bostadstyper')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "c85fdf76-8cd7-4402-ba33-c7b2fb7f2bb5",
-      "comment": "",
-      "command": "click",
-      "target": "css=.RadioButton:nth-child(2)",
-      "targets": [
-        ["css=.RadioButton:nth-child(2)", "css:finder"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[3]/div[2]/div/div/div[2]/div[2]", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "b39f8735-4509-4409-a9aa-4b32b410d3d9",
-      "comment": "",
-      "command": "click",
-      "target": "css=.RadioButton:nth-child(3) > svg",
-      "targets": [
-        ["css=.RadioButton:nth-child(3) > svg", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "da98d6bd-5a65-44e4-821e-1fb068f2d948",
-      "comment": "",
-      "command": "click",
-      "target": "css=.RadioButton:nth-child(4) > svg",
-      "targets": [
-        ["css=.RadioButton:nth-child(4) > svg", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "652a3b56-71f2-4953-9744-813fbd6f78e6",
-      "comment": "",
-      "command": "click",
-      "target": "css=.RadioButton:nth-child(5)",
-      "targets": [
-        ["css=.RadioButton:nth-child(5)", "css:finder"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[3]/div[2]/div/div/div[2]/div[5]", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div[2]/div[5]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "298b50a0-812f-4201-9475-d8939c9fbf8b",
-      "comment": "",
-      "command": "click",
-      "target": "css=.RadioButton:nth-child(6) > svg",
-      "targets": [
-        ["css=.RadioButton:nth-child(6) > svg", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "26924fe2-1b5a-4ecd-a303-4b9611d67057",
-      "comment": "",
-      "command": "click",
-      "target": "css=.open",
-      "targets": [
-        ["css=.open", "css:finder"],
-        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[3]/div/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div[3]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Bostadstyper - 1')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "721d35cb-20e6-4c7f-8356-0d7695f922da",
-      "comment": "",
-      "command": "click",
-      "target": "css=.FilterDropdown:nth-child(4) .FilterBar-filterBtn",
-      "targets": [
-        ["css=.FilterDropdown:nth-child(4) .FilterBar-filterBtn", "css:finder"],
-        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[4]/div/button", "xpath:idRelative"],
-        ["xpath=//div[4]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Rum')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "05230123-94f6-434b-be6b-e4303d0b0ae7",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.FilterDropdown:nth-child(4) .FilterBar-filterBtn",
-      "targets": [
-        ["css=.FilterDropdown:nth-child(4) .FilterBar-filterBtn", "css:finder"],
-        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[4]/div/button", "xpath:idRelative"],
-        ["xpath=//div[4]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Rum')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "00f67da7-5155-48f5-8371-ec9333cd8e4a",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "css=.open",
-      "targets": [
-        ["css=.open", "css:finder"],
-        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[4]/div/button", "xpath:idRelative"],
-        ["xpath=//div[4]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Rum')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "aba19094-5c70-4e84-b9a1-24d0dd5ef23f",
-      "comment": "",
-      "command": "click",
-      "target": "css=.FilterDropdown:nth-child(5) .FilterBar-filterBtn",
-      "targets": [
-        ["css=.FilterDropdown:nth-child(5) .FilterBar-filterBtn", "css:finder"],
-        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[5]/div/button", "xpath:idRelative"],
-        ["xpath=//div[5]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Storlek')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "88d7fe6c-4227-456f-98a3-64563fcc8733",
-      "comment": "",
-      "command": "click",
-      "target": "css=.FilterDropdown:nth-child(6) .FilterBar-filterBtn",
-      "targets": [
-        ["css=.FilterDropdown:nth-child(6) .FilterBar-filterBtn", "css:finder"],
-        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[6]/div/button", "xpath:idRelative"],
-        ["xpath=//div[6]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Pris')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d2eb0bd8-e9a4-4b7b-875a-30b7200b6f57",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.FilterDropdown:nth-child(6) .FilterBar-filterBtn",
-      "targets": [
-        ["css=.FilterDropdown:nth-child(6) .FilterBar-filterBtn", "css:finder"],
-        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[6]/div/button", "xpath:idRelative"],
-        ["xpath=//div[6]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Pris')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "27b487bd-f58f-421a-8147-38715ce61228",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "css=.open",
-      "targets": [
-        ["css=.open", "css:finder"],
-        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[6]/div/button", "xpath:idRelative"],
-        ["xpath=//div[6]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Pris')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "99e69be3-2b8b-47f2-87fb-0a9e582d3bc2",
-      "comment": "",
-      "command": "click",
-      "target": "css=.open",
-      "targets": [
-        ["css=.open", "css:finder"],
-        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div[2]/div[6]/div/button", "xpath:idRelative"],
-        ["xpath=//div[6]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Pris')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }]
-  }, {
     "id": "14d63ff0-c5a3-4bf3-bd94-a7a59f16732f",
     "name": "Search for specific residence with Adress",
     "commands": [{
@@ -553,13 +188,6 @@
       "comment": "",
       "command": "open",
       "target": "https://norban.se/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "186a8ce3-9687-403c-81c4-325761f6e203",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1552x832",
       "targets": [],
       "value": ""
     }, {
@@ -576,36 +204,6 @@
         ["xpath=//li[3]/a", "xpath:position"],
         ["xpath=//a[contains(.,'Våra bostäder')]", "xpath:innerText"]
       ],
-      "value": ""
-    }, {
-      "id": "7092a9b9-28ac-4c6f-8d40-63b1180aa499",
-      "comment": "",
-      "command": "storeText",
-      "target": "css=.AnchorNewTab:nth-child(1) .ListingCard-streetAddr",
-      "targets": [
-        ["css=.AnchorNewTab:nth-child(1) .ListingCard-streetAddr", "css:finder"],
-        ["xpath=//div[@id='react-root']/div/div[3]/div/div/div[2]/a/div/div[3]/div[2]/div", "xpath:idRelative"],
-        ["xpath=//a/div/div[3]/div[2]/div", "xpath:position"]
-      ],
-      "value": "Adress 1"
-    }, {
-      "id": "2d2c9d2b-f292-4cfb-b0e4-5d4c2ba52023",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Prototype-searchInputCtrl",
-      "targets": [
-        ["css=.Prototype-searchInputCtrl", "css:finder"],
-        ["xpath=//input[@value='']", "xpath:attributes"],
-        ["xpath=//div[@id='react-root']/div/div[2]/div/div/div[3]/div[2]/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "888453b7-3287-45fa-84e0-00b8694af7d2",
-      "comment": "",
-      "command": "",
-      "target": "",
-      "targets": [],
       "value": ""
     }]
   }, {
@@ -793,6 +391,439 @@
         ["xpath=//a/div/div[3]/div[2]/div", "xpath:position"]
       ],
       "value": ""
+    }]
+  }, {
+    "id": "ced04972-868d-41d2-929b-588ec383c744",
+    "name": "Log In ",
+    "commands": [{
+      "id": "9b97f575-3891-4cc8-8ab1-cce52cdad0b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=li .AccountIcon div:nth-child(1)",
+      "targets": [
+        ["css=li .AccountIcon div:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/ul/li[6]/a/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9df5df1a-52bd-47d1-a9c3-ba249840bdca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AuthPage-segmentedControlBtn:nth-child(3)",
+      "targets": [
+        ["css=.AuthPage-segmentedControlBtn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logga in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc67a841-9e0e-4c89-a9a3-7debc2d34f36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AuthForms-formInput:nth-child(1)",
+      "targets": [
+        ["css=.AuthForms-formInput:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37dfc2eb-77fd-4ae6-b222-d1a242fd987b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.AuthForms-formInput:nth-child(1)",
+      "targets": [
+        ["css=.AuthForms-formInput:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='oliver.werthen@hotmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "oliver.werthen@hotmail.com"
+    }, {
+      "id": "9ff5ab0d-4d9b-45e9-90dc-415b51a97db0",
+      "comment": "",
+      "command": "type",
+      "target": "css=.AuthForms-formInput:nth-child(2)",
+      "targets": [
+        ["css=.AuthForms-formInput:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='TestTest123']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "TestTest123"
+    }, {
+      "id": "05224a3a-c88a-4748-9b14-dd4e5eb872e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AuthForms-submitBtn",
+      "targets": [
+        ["css=.AuthForms-submitBtn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div[2]/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a539dbda-1435-4528-ad8f-e69cd7353852",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AccountPage-linkButton",
+      "targets": [
+        ["css=.AccountPage-linkButton", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='react-root']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logga ut')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "75ee9c9e-316a-493b-8b1f-d2c2f5e8972c",
+      "comment": "",
+      "command": "click",
+      "target": "css=li .AccountIcon-text > div:nth-child(2)",
+      "targets": [
+        ["css=li .AccountIcon-text > div:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/ul/li[6]/a/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "85cfc68d-fbfa-44c1-86bc-c1576452aaf0",
+    "name": "Image",
+    "commands": [{
+      "id": "358e2037-aedc-44c9-84be-728d27606d03",
+      "comment": "",
+      "command": "open",
+      "target": "https://norban.se/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5513ce01-28d7-4786-93ca-e6f4fb03aaa1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0b1fba7-47ac-46ff-bd82-bb71be9afc5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li .AccountIcon div:nth-child(1)",
+      "targets": [
+        ["css=li .AccountIcon div:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/ul/li[6]/a/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6484a576-fe18-46d6-be2e-365b87c8b46f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.AccountEmptyState-img",
+      "targets": [
+        ["css=.AccountEmptyState-img", "css:finder"],
+        ["xpath=//img[@alt='Norbdog']", "xpath:img"],
+        ["xpath=//div[@id='react-root']/div[2]/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "97b4a236-cf78-4b04-91e6-a958599a1479",
+    "name": "Get adress of first Residence ",
+    "commands": [{
+      "id": "6c4fc001-2d79-4f4e-9a76-95720d2fc085",
+      "comment": "",
+      "command": "open",
+      "target": "https://norban.se/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c33c897-560d-44df-bc77-4c47e249c13d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Våra bostäder",
+      "targets": [
+        ["linkText=Våra bostäder", "linkText"],
+        ["css=li:nth-child(3) > .Header-navigationLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Våra bostäder')]", "xpath:link"],
+        ["xpath=//div[@id='react-root']/header/div/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vara-bostader/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Våra bostäder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34bbdae6-158c-4f19-aa8f-a2d4b931936f",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='react-root']/div/div[3]/div/div/div[2]/a/div/div[3]/div[2]/div",
+      "targets": [
+        ["css=.AnchorNewTab:nth-child(1) .ListingCard-streetAddr", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div[3]/div/div/div[2]/a/div/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//a/div/div[3]/div[2]/div", "xpath:position"]
+      ],
+      "value": "Adress"
+    }, {
+      "id": "28c9f64f-c78b-447a-b254-90356b2dcc1a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//div[@id='react-root']/div/div[3]/div/div/div[2]/a/div/div[3]",
+      "targets": [
+        ["css=.AnchorNewTab:nth-child(1) .ListingCard-content", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div[3]/div/div/div[2]/a/div/div[3]", "xpath:idRelative"],
+        ["xpath=//a/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cf41fec-be3b-480c-81ca-0b5cf968f121",
+      "comment": "",
+      "command": "clickAt",
+      "target": "xpath=//div[@id='react-root']/div/div[3]/div/div/div[2]/a/div/div[3]",
+      "targets": [
+        ["css=.Prototype-searchInput", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div[2]/div/div/div[3]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5b1affe7-ee4d-4581-8d31-9ae451e81228",
+    "name": "Phone meny ",
+    "commands": [{
+      "id": "88eab780-2f20-4344-8cce-5834fdf98bd0",
+      "comment": "",
+      "command": "open",
+      "target": "https://norban.se/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f47c7aa2-af5d-482f-ae98-f1e9289a7204",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x823",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12a8db01-7ff6-4a2f-b8b3-32cc3f669c27",
+      "comment": "",
+      "command": "click",
+      "target": "css=.FrontPage-topAboveFoldTagline",
+      "targets": [
+        ["css=.FrontPage-topAboveFoldTagline", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/section/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mänskliga mäklare. Digitala möjligheter.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bb5792b-d361-4e33-b04d-b0fdeb085c92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-hamburger",
+      "targets": [
+        ["css=.Header-hamburger", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/div[2]", "xpath:idRelative"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41706bb1-3e98-499b-82be-445dbc747866",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-mobileMenuLink:nth-child(1) > .Header-mobileMenuLinkTitle",
+      "targets": [
+        ["css=.Header-mobileMenuLink:nth-child(1) > .Header-mobileMenuLinkTitle", "css:finder"],
+        ["xpath=//div[@id='react-aria-modal-dialog']/div/div/a/h2", "xpath:idRelative"],
+        ["xpath=//a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Så funkar Norban')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f62172ee-ae48-4702-93a6-d812b00ab490",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='react-root']/div/section/div/div/h1",
+      "targets": [
+        ["css=.SellPage-introTitle", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/section/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Varför stressa igenom ditt livs största affär?')]", "xpath:innerText"]
+      ],
+      "value": "Varför stressa igenom ditt livs största affär?"
+    }, {
+      "id": "983b9beb-5615-499d-962e-bb9136686110",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-hamburger",
+      "targets": [
+        ["css=.Header-hamburger", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/div[2]", "xpath:idRelative"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18622676-c854-4206-ba58-7b1fc3a4e4ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-mobileMenuLink:nth-child(2) > .Header-mobileMenuLinkTitle",
+      "targets": [
+        ["css=.Header-mobileMenuLink:nth-child(2) > .Header-mobileMenuLinkTitle", "css:finder"],
+        ["xpath=//div[@id='react-aria-modal-dialog']/div/div/a[2]/h2", "xpath:idRelative"],
+        ["xpath=//a[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Nyproduktion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89c3d08e-1b3b-4fd9-8aea-c5a9f082ee7a",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='react-root']/div/div/div/h1",
+      "targets": [
+        ["css=.NewConstruction-title", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Nyproduktion')]", "xpath:innerText"]
+      ],
+      "value": "Nyproduktion"
+    }, {
+      "id": "b7628570-1a50-4f14-abf2-e80be2f183be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-hamburger",
+      "targets": [
+        ["css=.Header-hamburger", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/div[2]", "xpath:idRelative"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b3c0092-471d-45e3-82b6-6fc8fd8db1e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-mobileMenuLink:nth-child(3) > .Header-mobileMenuLinkTitle",
+      "targets": [
+        ["css=.Header-mobileMenuLink:nth-child(3) > .Header-mobileMenuLinkTitle", "css:finder"],
+        ["xpath=//div[@id='react-aria-modal-dialog']/div/div/a[3]/h2", "xpath:idRelative"],
+        ["xpath=//a[3]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Våra bostäder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3025ff11-1e16-4c5d-9b10-0c2d40b28ca1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=(//button[@type='button'])[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0790946-ce2c-4762-b294-f29d604252c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-hamburger",
+      "targets": [
+        ["css=.Header-hamburger", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/div[2]", "xpath:idRelative"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a653a62f-553a-46e0-8094-298ba618ce8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-mobileMenuLink:nth-child(4) > .Header-mobileMenuLinkTitle",
+      "targets": [
+        ["css=.Header-mobileMenuLink:nth-child(4) > .Header-mobileMenuLinkTitle", "css:finder"],
+        ["xpath=//div[@id='react-aria-modal-dialog']/div/div/a[4]/h2", "xpath:idRelative"],
+        ["xpath=//a[4]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Om Norban')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae4f5b82-f329-4fe9-9d6d-e9fcea6d35e2",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='react-root']/div/section/div/div/h1",
+      "targets": [
+        ["css=.AboutPage-introTitle", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/section/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Vi vill skapa världens bästa mäklartjänst.')]", "xpath:innerText"]
+      ],
+      "value": "Vi vill skapa världens bästa mäklartjänst."
+    }, {
+      "id": "c3c2b2e6-7f42-4240-bce4-3e50a96b3d1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-hamburger",
+      "targets": [
+        ["css=.Header-hamburger", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/div[2]", "xpath:idRelative"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dfc4af1-3404-42b6-badd-3307bb859f45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-mobileMenuLink:nth-child(5) > .Header-mobileMenuLinkTitle",
+      "targets": [
+        ["css=.Header-mobileMenuLink:nth-child(5) > .Header-mobileMenuLinkTitle", "css:finder"],
+        ["xpath=//div[@id='react-aria-modal-dialog']/div/div/a[5]/h2", "xpath:idRelative"],
+        ["xpath=//a[5]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Blogg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00e7293e-7908-4c5f-ac94-e3f6448e645d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.BlogOverviewPage-body",
+      "targets": [
+        ["css=.BlogOverviewPage-body", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/section[2]", "xpath:idRelative"],
+        ["xpath=//section[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0c074a8-5661-49e8-9f5a-516b7985e947",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-hamburger",
+      "targets": [
+        ["css=.Header-hamburger", "css:finder"],
+        ["xpath=//div[@id='react-root']/header/div/nav/div[2]", "xpath:idRelative"],
+        ["xpath=//nav/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2855279d-da9e-4e68-8ada-68f9e42541cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header-mobileMenuLink:nth-child(6) > .Header-mobileMenuLinkTitle",
+      "targets": [
+        ["css=.Header-mobileMenuLink:nth-child(6) > .Header-mobileMenuLinkTitle", "css:finder"],
+        ["xpath=//div[@id='react-aria-modal-dialog']/div/div/a[6]/h2", "xpath:idRelative"],
+        ["xpath=//a[6]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'FAQ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "777b638a-e44d-4525-928b-01991e5c42ab",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='react-root']/div/section/div/div/h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/section/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Här får du svar på\\nde vanligaste\\nfrågorna."
     }]
   }],
   "suites": [{

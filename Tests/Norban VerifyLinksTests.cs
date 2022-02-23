@@ -45,10 +45,30 @@ public class VerifyLinksTest {
     Assert.That(driver.FindElement(By.CssSelector(".NewConstruction-title")).Text, Is.EqualTo("Nyproduktion"));
   }
   [Test]
+  public void logIn()
+  {
+    driver.FindElement(By.CssSelector("li .AccountIcon div:nth-child(1)")).Click();
+    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+    IWebElement firstResult = wait.Until(e => e.FindElement(By.CssSelector(".AuthPage-segmentedControlBtn:nth-child(3)")));
+    driver.FindElement(By.CssSelector(".AuthPage-segmentedControlBtn:nth-child(3)")).Click();
+    WebDriverWait wait1 = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+    IWebElement firstResult1 = wait.Until(e => e.FindElement(By.CssSelector(".AuthForms-formInput:nth-child(1)")));
+    driver.FindElement(By.CssSelector(".AuthForms-formInput:nth-child(1)")).SendKeys("oliver.werthen@hotmail.com");
+    driver.FindElement(By.CssSelector(".AuthForms-formInput:nth-child(2)")).SendKeys("TestTest123");
+    driver.FindElement(By.CssSelector(".AuthForms-submitBtn")).Click();
+    WebDriverWait wait2 = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+    IWebElement firstResult2 = wait.Until(e => e.FindElement(By.CssSelector(".AccountEmptyState-img")));
+    var elements = driver.FindElements(By.CssSelector(".AccountEmptyState-img"));
+    Assert.True(elements.Count > 0);
+    }
+}
+[Test]
   public void verifySfunkarNorban() {
     driver.Navigate().GoToUrl("https://norban.se/");
     driver.Manage().Window.Size = new System.Drawing.Size(1536, 816);
     driver.FindElement(By.LinkText("Så funkar Norban")).Click();
     Assert.That(driver.FindElement(By.CssSelector(".SellPage-introTitle")).Text, Is.EqualTo("Varför stressa igenom ditt livs största affär?"));
   }
+
 }
+
