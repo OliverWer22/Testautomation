@@ -1,5 +1,6 @@
 # Kunskapskontroll 2
-Projekt för kunskapskontroll 2
+Projekt för kunskapskontroll 2.  
+Automatiserad testning av Norban.se.
 
 # Valet av testverktyg  
 Jag har valt att skapa mina tester i Selenium IDE och Webdriver. Valet av testverktyg var tämligen simpelt för mig då jag var väldigt inriktad på att testa en webbsidas GUI.  Då Selenium är det GUI verktyget vi gick igenom under föreläsningar och jag har hört talas om i flera sammanhang såsom gästföreläsare och mentor. Det verkar även som det används av en hel del testare och företag när det gäller automatiserad testning.  
