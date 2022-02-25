@@ -10,6 +10,7 @@ Det kändes även smart att använda Selenium då jag kunde använda C#, som jag
 # Testdesign
 I de flesta av mina tester började jag med att skapa grunden i Selenium IDE genom att spela in navigationsvägar i den mån det gick för varje test. Därefter exporterade jag testet och fortsatt att bygga ut testet med hjälp av Webdriver och kompletterade med ”waits” osv där det krävdes.  
 Jag hade velat skapa lite tester för att publicera bostäder och med fel värden osv men det kändes lite dumt på en ”verklig sida” där jag inte har direkt tillgång till databasen så det kan tas bort direkt.  
+Nu i efterhand när jag kommer ihåg lite mer av C# och vet lite mer om hur man skapar de automatiserade testerna. Så hade det varit bättre att göra om visa koddelar till klasser så de lätt kunde återanvändas på ställen där det behövdes.  
 
 #Setup: I min setup så startar jag Chrome ”drivern” samt öppnar startsidan för Norban.se. Efter det har jag en lagt in en ”wait” som ser till att det har laddats in korrekt och sedan sätter webbläsarfönstret till 1552x832 pixlar.  
 #Initialize: I initialize så öppnar startsidan för Norban.se, ser till så att den är inladdad med en ”wait” och sätter fönstret till 1552x832 pixlar. 
