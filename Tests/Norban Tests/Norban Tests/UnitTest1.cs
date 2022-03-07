@@ -18,7 +18,9 @@ public class Tests
     private IWebDriver driver;
     public IDictionary<string, object> vars { get; private set; }
     private IJavaScriptExecutor js;
+
     [SetUp]
+    // At startup, opens driver and norban and waits for it to load in correctly and sets window to full size.
     public void SetUp()
     {
         driver = new ChromeDriver();
@@ -29,6 +31,8 @@ public class Tests
         IWebElement firstResult = wait.Until(e => e.FindElement(By.CssSelector(".FrontPage-topAboveFoldTagline")));
         driver.Manage().Window.Size = new System.Drawing.Size(1552, 832);
     }
+
+    //Opens Norban between tests and waits for it to load in correctly and sets window to full size. 
     public void Initialize()
     {
         driver.Navigate().GoToUrl("https://norban.se/");
@@ -49,6 +53,7 @@ public class Tests
     }
 
     [Test]
+    // Verifys that homebutton works from "Så funkar Norban" and from homepage.
     public void verifyHomeButton()
     {
         driver.FindElement(By.CssSelector(".Header-logo")).Click();
@@ -64,6 +69,7 @@ public class Tests
 
     }
     [Test]
+    // Verify button "Nyproduktion" links to right page. 
     public void verifyNyproduktion()
     {
         driver.FindElement(By.LinkText("Nyproduktion")).Click();
@@ -72,6 +78,7 @@ public class Tests
         Assert.That(driver.FindElement(By.CssSelector(".NewConstruction-title")).Text, Is.EqualTo("Nyproduktion"));
     }
     [Test]
+    // Verify button "Så funkar Norban" links to right page.
     public void verifySåfunkarNorban()
     {
         driver.FindElement(By.LinkText("Så funkar Norban")).Click();
@@ -80,6 +87,7 @@ public class Tests
         Assert.That(driver.FindElement(By.CssSelector(".SellPage-introTitle")).Text, Is.EqualTo("Varför stressa igenom ditt livs största affär?"));
     }
     [Test]
+    // Login with active user works. 
     public void logIn()
     {
         driver.FindElement(By.CssSelector("li .AccountIcon div:nth-child(1)")).Click();
@@ -95,6 +103,7 @@ public class Tests
         Assert.True(elements.Count > 0);
     }
     [Test]
+    //Login without passoword verify label "lösenord saknas" shows. 
     public void logInNopassword()
     {
         driver.FindElement(By.CssSelector("li .AccountIcon")).Click();
@@ -108,6 +117,7 @@ public class Tests
         Assert.That(driver.FindElement(By.CssSelector(".AuthForms-errorText")).Text, Is.EqualTo("Lösenord saknas"));
     }
     [Test]
+    //Login without username verify label with "e-post saknas" shows. 
     public void loginNousername()
     {
         driver.FindElement(By.CssSelector("li .AccountIcon")).Click();
@@ -121,6 +131,7 @@ public class Tests
         Assert.That(driver.FindElement(By.CssSelector(".AuthForms-errorText")).Text, Is.EqualTo("E-post saknas"));
     }
     [Test]
+    //Verify missing e-post and password label when logging in without text in both fields. 
     public void loginNoUserandPass()
     {
         driver.FindElement(By.CssSelector("li .AccountIcon")).Click();
@@ -133,6 +144,7 @@ public class Tests
         Assert.That(driver.FindElement(By.XPath("//div[@id=\'react-root\']/div[2]/div/div[2]/form/p[2]")).Text, Is.EqualTo("Lösenord saknas"));
     }
      [Test]
+     //Test to grab adress from latest property and search for it.
     public void getAdressAndSearch()
     {
         driver.FindElement(By.LinkText("Våra bostäder")).Click();
@@ -154,6 +166,7 @@ public class Tests
     }
 
     [Test]
+    //Test to go through phone side meny. 
     public void phonemeny()
     {
         driver.Manage().Window.Size = new System.Drawing.Size(782, 823);
@@ -194,9 +207,7 @@ public class Tests
         Assert.True(elements1.Count > 0);
 
     }
-    /*WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-    IWebElement firstResult = wait.Until(e => e.FindElement(By.CssSelector("")));
-    */
+    
 }
 
 
